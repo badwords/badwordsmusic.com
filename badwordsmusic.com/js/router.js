@@ -11,5 +11,9 @@ define([
     }
   });
 
-  return AppRouter;
+  return {
+    initialize: function () {
+      var appRouter = new AppRouter();
+    }
+  };
 });
